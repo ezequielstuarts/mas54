@@ -73,12 +73,7 @@
                   </div>
                 </div>
                 <div class="col-lg-3 text-right col-sm-5 order-0 col-8">
-                    <ul class="socil-icon">
-                       <li><a href="https://www.facebook.com/Mas54AgenciaDigital" target="_blank"><i class="fa fa-facebook"></i></a></li>
-                            <li><a class="font-apagada" href="#"><i class="fa fa-linkedin"></i></a></li>
-                            <li><a class="font-apagada" href="#"><i class="fa fa-instagram"></i></a></li>
-                            <li><a class="font-apagada" href="#"><i class="fa fa-youtube"></i></a></li>
-                    </ul>
+                    <?php @include('includes/redes.php') ?>
                 </div>
                 <div class="col-lg-1 col-sm-2 order-0 col-4">
                     <ul class="menu">

@@ -69,12 +69,7 @@
                   </div>
                 </div>
                 <div class="col-lg-3 text-right col-sm-5 order-0 col-8">
-                    <ul class="socil-icon">
-                       <li><a href="https://www.facebook.com/Mas54AgenciaDigital" target="_blank"><i class="fa fa-facebook"></i></a></li>
-                            <li><a class="font-apagada" href="#"><i class="fa fa-linkedin"></i></a></li>
-                            <li><a class="font-apagada" href="#"><i class="fa fa-instagram"></i></a></li>
-                            <li><a class="font-apagada" href="#"><i class="fa fa-youtube"></i></a></li>
-                    </ul>
+                    <?php @include('includes/redes.php') ?>
                 </div>
                 <div class="col-lg-1 col-sm-2 order-0 col-4">
                     <ul class="menu">
@@ -109,15 +104,20 @@
                                 </div>
                             </div>
                             <div class="col-lg-6 col-sm-6 col-12 ">
-                                <div class="contact-info apagadas">
+                                <div class="contact-info hover cursorpoint">
                                     <i class="fa fa-linkedin"></i>
-                                    <p>/Linkedin</p>
+                                    <a href="https://www.linkedin.com/company/mas54agenciadigital" target="_blank">
+                                    <p>/mas54agenciadigital</p>
+                                </a>
+                                    
                                 </div>
                             </div>
                             <div class="col-lg-6 col-sm-6 col-12 ">
-                                <div class="contact-info apagadas">
+                                <div class="contact-info hover cursorpoint">
                                     <i class="fa fa-instagram"></i>
-                                    <p>/Instagram </p>
+                                    <a href="https://www.instagram.com/mas54agenciadigital" target="_blank">
+                                    <p>/mas54agenciadigital</p>
+                                </a>
                                 </div>
                             </div>
                             <div class="col-lg-6 col-sm-6 col-12 ">
