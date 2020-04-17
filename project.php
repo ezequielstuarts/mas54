@@ -134,8 +134,6 @@
                                         </div>
                                     </div>
                                     
-                                    
-                                    
                                      <div class="col-lg-2 col-12 wow fadeInUp" data-wow-delay=".1s">
                                         <div class="project-items sm-mb-30">
                                             <img src="assets/images/project/logo_figurella_color.jpg" alt="">
@@ -161,13 +159,6 @@
                                             <img src="assets/images/project/logo_via_color.jpg" alt="">
                                         </div>
                                     </div>
-                                    
-                                    
-                                     <!-- <div class="col-lg-2 col-12 wow fadeInUp" data-wow-delay=".1s">
-                                        <div class="project-items sm-mb-30">
-                                            <img src="assets/images/project/logo_beaecotec_color.jpg" alt="">
-                                        </div>
-                                    </div> -->
                                     
                                     
                                      <div class="col-lg-2 col-12 wow fadeInUp" data-wow-delay=".1s">
@@ -213,13 +204,6 @@
                                             <img src="assets/images/project/logo_nidera_color.jpg" alt="">
                                         </div>
                                     </div>
-                                    
-                                    
-                                    
-                                    
-                                    
-                                    
-                                    
                                     
                                 </div>
                             </div>

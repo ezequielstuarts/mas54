@@ -112,7 +112,7 @@
                                     
                                 </div>
                             </div>
-                            <div class="col-lg-6 col-sm-6 col-12 ">
+                            <div class="col-lg-6 col-sm-6 col-12">
                                 <div class="contact-info hover cursorpoint">
                                     <i class="fa fa-instagram"></i>
                                     <a href="https://www.instagram.com/mas54agenciadigital" target="_blank">
@@ -120,12 +120,12 @@
                                 </a>
                                 </div>
                             </div>
-                            <div class="col-lg-6 col-sm-6 col-12 ">
+                            <!-- <div class="col-lg-6 col-sm-6 col-12 ">
                                 <div class="contact-info apagadas">
                                     <i class="fa fa-youtube"></i>
                                     <p>/Youtube </p>
                                 </div>
-                            </div>
+                            </div> -->
                         </div>
                         <div class="contact-form form-style">
                             <div class="cf-msg"></div>
