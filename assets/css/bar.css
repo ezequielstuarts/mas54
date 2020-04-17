@@ -1,0 +1,127 @@
+
+/* contacto */
+.div-floatcontact {
+	position: fixed;
+	z-index: 1000;
+	bottom: 10vh;
+	right: 30px;
+	
+	width: 322px;
+	height: 94px;
+	background: url("../img/btn-contact-closed.png") no-repeat center center; 
+	text-align: center;
+	padding: 25px 0;
+	border-radius: 22px;
+	box-shadow: -2px 2px 5px 1px rgba(0,0,0,0.7);
+}
+
+.div-out {
+	transform: translateX(400px);
+}
+.div-floatcontact img {
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 5;
+}
+.div-floatcontact a {
+	position: relative;
+	font-size: 38px;
+	z-index: 10;
+	text-transform: uppercase;
+	cursor: pointer;
+	color: white;
+}
+.div-maincontact {
+	display: none;
+	position: fixed;
+	z-index: 1000;
+	bottom: 10vh;
+	right: 30px;
+	
+	width: 322px;
+	height: 463px;
+	text-align: right;
+	border-radius: 22px;
+	box-shadow: -2px 2px 5px 1px rgba(0,0,0,0.7);
+}
+.div-maincontact h2 {
+	display: none;
+}
+.div-maincontact img {
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 5;
+}
+.div-maincontact a {
+	display: block;
+	position: relative;
+	z-index: 10;
+	font-size: 30px;
+	color: white;
+	padding: 8px 15px 0 0;
+	font-family: 'GothamHTFBook', sans-serif;
+	
+	cursor: pointer;
+}
+.div-maincontact form {
+	position: relative;
+	padding: 15px;
+	z-index: 8;
+}
+
+.div-maincontact .formmessage {
+	display: none;
+	position: relative;
+	padding: 50px 15px;
+	z-index: 8;
+	text-align: center;
+	
+	color: white;
+	font-size: 32px;
+}
+
+.div-maincontact div {
+	display: block;
+	margin-bottom: 10px;
+}
+.div-maincontact .contactctrl {
+	width: 100%;
+	padding: 3px 10px;
+	background-color: rgb(244,242,237);
+	box-sizing: border-box;
+	
+	color: rgb(126,126,126);
+	font-size: 18px;
+	font-family: 'GothamHTF', sans-serif;
+	border: 0;
+}
+
+input.contactctrl {
+	height: 30px;
+}
+textarea.contactctrl {
+	height: 150px;
+	resize: none;
+}
+input.contactbtn {
+	height: 30px;
+	color: white;
+	background-color: rgb(51,51,51);
+	width: 100%;
+	font-size: 18px;
+	font-family: 'GothamHTFBold', sans-serif;
+	box-sizing: border-box;
+	
+	border: 0;
+	
+	cursor: pointer;
+}
+
+.g-recaptcha > div {
+	width: 292px !important;
+}
+.g-recaptcha > div iframe {
+	width: 292px;
+}
