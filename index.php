@@ -230,7 +230,7 @@
                 </div>
                 <div class="col-md-4 col-sm-3 col-12">
                     <ul class="d-flex">
-                        <li><a href="contact.html">Contacto</a></li>
+                        <li><a href="contact.php">Contacto</a></li>
                         <li class="oculto"><a class="video-popup" href="#"><span class="flaticon-play-button"></span></a></li>
                     </ul>
                 </div>
