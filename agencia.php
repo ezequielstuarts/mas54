@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <title>Más54. La agencia.</title>
-    <meta name="description" content="Somos una Agencia Interactiva e integral que provee soluciones de comunicación a grandes marcas utilizando inteligentemente todas las herramientas del mercado publicitario.">
+    <meta name="description" content="Somos una agencia digital especialista en comunicación digital, marketing de contenidos, campañas digitales y desarrollo web.">
     <meta name="keywords" content="Sem, Seo, Adwords, Social Media, Redes Sociales, e-mail marketing, desarrollo web, aplicaciones mobile, gaming, video marketing">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="shortcut icon" type="image/png" href="assets/images/favicon.png">
@@ -63,7 +63,7 @@
             <div class="row">
                 <div class="col-lg-4 col-sm-5 order-0 col-12">
                     <div class="header-left">
-                      <p><a href="index.html"><img class="light-logo" src="assets/images/logo.png" alt=""></a></p>
+                      <p><a href="index.php"><img class="light-logo" src="assets/images/logo.png" alt=""></a></p>
                     </div>
                 </div>
                 <div class="col-lg-4 text-center col-12 order-4 order-lg-0">
