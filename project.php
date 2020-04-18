@@ -1,3 +1,8 @@
+
+<?php 
+@include("data/marcas.php")
+?>
+
 <!doctype html>
 <html class="no-js" lang="es">
 
@@ -68,8 +73,7 @@
                     </div>
                 </div>
                 <div class="col-lg-4 text-center col-12 order-4 order-lg-0">
-                    <div class="logo">
-                        
+                    <div class="logo"> 
                   </div>
                 </div>
                 <div class="col-lg-3 text-right col-sm-5 order-0 col-8">
@@ -105,109 +109,16 @@
                         <div class="tab-content">
                             <div class="tab-pane fade show active" id="design">
                                 <div class="row">
-
-                                    <div class="col-lg-2 col-12 wow fadeInUp" data-wow-delay=".1s">
-                                        <div class="project-items sm-mb-30">
-                                            <img src="assets/images/project/logo_bbva_color.jpg" alt="">
+                                    <?php foreach ($array as $dato => $valor) { ?>
+                                        <div class="col-lg-2 col-12 wow fadeInUp" data-wow-delay=".1s">
+                                            <div class="project-items sm-mb-30">
+                                                <img src=" <?php echo $valor['url'] ?>" alt="<?php echo $valor['logo']?>" title=" <?php echo $valor['title']?> ">
+                                            </div>
                                         </div>
-                                    </div>                                    
-                                    
-                                     <div class="col-lg-2 col-12 wow fadeInUp" data-wow-delay=".1s">
-                                        <div class="project-items sm-mb-30">
-                                            <img src="assets/images/project/logo_cofco_color.jpg" alt="">
-                                        </div>
-                                    </div>
-                                    
-                                    <div class="col-lg-2 col-12 wow fadeInUp" data-wow-delay=".1s">
-                                        <div class="project-items sm-mb-30">
-                                            <img src="assets/images/project/logo_poxipol_color.jpg" alt=""> 
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-2 col-12 wow fadeInUp" data-wow-delay=".1s">
-                                        <div class="project-items sm-mb-30">
-                                            <img src="assets/images/project/logo_gotita_color.jpg" alt="">
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-2 col-12 wow fadeInUp" data-wow-delay=".1s">
-                                        <div class="project-items sm-mb-30">
-                                            <img src="assets/images/project/logo_eccole_color.jpg" alt="">
-                                        </div>
-                                    </div>
-                                    
-                                     <div class="col-lg-2 col-12 wow fadeInUp" data-wow-delay=".1s">
-                                        <div class="project-items sm-mb-30">
-                                            <img src="assets/images/project/logo_figurella_color.jpg" alt="">
-                                            
-                                        </div>
-                                    </div>
-                                    
-                                    <div class="col-lg-2 col-12 wow fadeInUp" data-wow-delay=".1s">
-                                        <div class="project-items sm-mb-30">
-                                            <img src="assets/images/project/logo_orizon_color.jpg" alt="">
-                                            
-                                        </div>
-                                    </div>
-                                    
-                                    <div class="col-lg-2 col-12 wow fadeInUp" data-wow-delay=".1s">
-                                        <div class="project-items sm-mb-30">
-                                            <img src="assets/images/project/logo_cnv_color.jpg" alt="">
-                                        </div>
-                                    </div>
-                                    
-                                    <div class="col-lg-2 col-12 wow fadeInUp" data-wow-delay=".1s">
-                                        <div class="project-items sm-mb-30">
-                                            <img src="assets/images/project/logo_via_color.jpg" alt="">
-                                        </div>
-                                    </div>
-                                    
-                                    
-                                     <div class="col-lg-2 col-12 wow fadeInUp" data-wow-delay=".1s">
-                                        <div class="project-items sm-mb-30">
-                                            <img src="assets/images/project/logo_aval_color.jpg" alt="">
-                                        </div>
-                                    </div>
-                                    
-                                     <div class="col-lg-2 col-12 wow fadeInUp" data-wow-delay=".1s">
-                                        <div class="project-items sm-mb-30">
-                                            <img src="assets/images/project/logo_mb_color.jpg" alt="">
-                                        </div>
-                                    </div>
-                                    
-                                     <div class="col-lg-2 col-12 wow fadeInUp" data-wow-delay=".1s">
-                                        <div class="project-items sm-mb-30">
-                                            <img src="assets/images/project/logo_prosegur_color.jpg" alt="">
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-2 col-12 wow fadeInUp" data-wow-delay=".1s">
-                                        <div class="project-items sm-mb-30">
-                                            <img src="assets/images/project/logo_smart_color.jpg" alt="">
-                                        </div>
-                                    </div>
-                                    
-                                    <div class="col-lg-2 col-12 wow fadeInUp" data-wow-delay=".1s">
-                                        <div class="project-items sm-mb-30">
-                                            <img src="assets/images/project/logo_tipem_color.jpg" alt="">
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-2 col-12 wow fadeInUp" data-wow-delay=".1s">
-                                        <div class="project-items sm-mb-30">
-                                            <img src="assets/images/project/logo_citaldoc_color.jpg" alt="">
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-2 col-12 wow fadeInUp" data-wow-delay=".1s">
-                                        <div class="project-items sm-mb-30">
-                                            <img src="assets/images/project/logo_rapi_color.jpg" alt="">
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-2 col-12 wow fadeInUp" data-wow-delay=".1s">
-                                        <div class="project-items sm-mb-30">
-                                            <img src="assets/images/project/logo_nidera_color.jpg" alt="">
-                                        </div>
-                                    </div>
-                                    
+                                    <?php } ?>
                                 </div>
                             </div>
-                            <div class="tab-pane fade" id="graphic">
+                            <!-- <div class="tab-pane fade" id="graphic">
                                 <div class="row">
                                     <div class="col-lg-5 col-sm-6 col-12 wow fadeInUp" data-wow-delay=".1s">
                                         <div class="project-items">
@@ -238,8 +149,8 @@
                                         </div>
                                     </div>
                                 </div>
-                            </div>
-                            <div class="tab-pane fade" id="development">
+                            </div> -->
+                            <!-- <div class="tab-pane fade" id="development">
                                 <div class="row">
                                     <div class="col-lg-5 col-sm-6 col-12 wow fadeInUp" data-wow-delay=".1s">
                                         <div class="project-items">
@@ -302,7 +213,7 @@
                                         </div>
                                     </div>
                                 </div>
-                            </div>
+                            </div> -->
                         </div>
                     </div>
                 </div>

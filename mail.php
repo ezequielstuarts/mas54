@@ -36,7 +36,7 @@
 if(!$responseData->success) {
 			echo "<script>
 						alert('Resuelva el captcha');
- 	               		window.location='contact.php'
+ 	               		window.location='contact.html'
  	  			 </script>";
 			return;
 	}
@@ -54,7 +54,7 @@ if(!$responseData->success) {
 	mail($to,$asunto,$msg,$cabeceras);
 	echo "<script>
                 alert('Gracias por contactarnos...');
-                window.location= 'index.php'
+                window.location= 'index.html'
    			 </script>";
 	// echo "Captcha resuelto";
 ?>
