@@ -14,7 +14,7 @@ $array = [
     [
     "logo" => "logo_poxipol_color",
     "title" => "poxipol",
-    "url" => "assets/images/project/logo_poxipol_color.jpg"
+    "url" => "assets/images/project/logo_poxipol_color.png"
     ],
     [
     "logo" => "logo_gotita_color",
@@ -24,7 +24,7 @@ $array = [
     [
     "logo" => "logo_eccole_color",
     "title" => "eccole",
-    "url" => "assets/images/project/logo_eccole_color.jpg"
+    "url" => "assets/images/project/logo_eccole_color.png"
     ],
     [
     "logo" => "logo_figurella_color",
