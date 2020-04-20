@@ -7,24 +7,44 @@ $array = [
     "url" => "assets/images/project/logo_bbva_color.jpg"
     ],
     [
-    "logo" => "logo_cofco",
-    "title" => "cofco",
-    "url" => "assets/images/project/logo_cofco_color.jpg"
+    "logo" => "logo_citaldoc",
+    "title" => "citaldoc",
+    "url" => "assets/images/project/logo_citaldoc_color.jpg"
     ],
     [
     "logo" => "logo_poxipol",
     "title" => "poxipol",
-    "url" => "assets/images/project/logo_poxipol_chile.png"
+    "url" => "assets/images/project/logo_poxipol_chile_color.png"
     ],
     [
     "logo" => "logo_gotita",
     "title" => "gotita",
-    "url" => "assets/images/project/logo_gotita_color.png"
+    "url" => "assets/images/project/logo_gotita_uruguay.png"
+    ],
+    [
+        "logo" => "logo_gotita",
+        "title" => "gotita",
+        "url" => "assets/images/project/logo_gotita_bolivia.png"
+    ],
+    [
+        "logo" => "logo_gotita",
+        "title" => "gotita",
+        "url" => "assets/images/project/logo_gotita_islas.png"
     ],
     [
     "logo" => "logo_eccole",
     "title" => "eccole",
-    "url" => "assets/images/project/logo_eccole_color.png"
+    "url" => "assets/images/project/logo_eccole_chile.png"
+    ],
+    [
+    "logo" => "logo_eccole",
+    "title" => "eccole",
+    "url" => "assets/images/project/logo_eccole_uruguay.png"
+    ],
+    [
+    "logo" => "logo_eccole",
+    "title" => "eccole",
+    "url" => "assets/images/project/logo_eccole_paraguay.png"
     ],
     [
     "logo" => "logo_figurella",
@@ -71,11 +91,7 @@ $array = [
     "title" => "tipem",
     "url" => "assets/images/project/logo_tipem_color.jpg"
     ],
-    [
-    "logo" => "logo_citaldoc",
-    "title" => "citaldoc",
-    "url" => "assets/images/project/logo_citaldoc_color.jpg"
-    ],
+    
     [
     "logo" => "logo_rapi",
     "title" => "rapi",
@@ -85,6 +101,26 @@ $array = [
     "logo" => "logo_nidera",
     "title" => "nidera",
     "url" => "assets/images/project/logo_nidera_color.png"
+    ],
+    [
+    "logo" => "logo_agricultura_consciente",
+    "title" => "nidera",
+    "url" => "assets/images/project/logo_ac_argentina.png"
+    ],
+    [
+    "logo" => "logo_agricultura_consciente",
+    "title" => "nidera",
+    "url" => "assets/images/project/logo_ac_paraguay.png"
+    ],
+    [
+    "logo" => "logo_cofco",
+    "title" => "cofco",
+    "url" => "assets/images/project/logo_cofco_color.jpg"
+    ],
+    [
+    "logo" => "logo_cofco_fertilizantes",
+    "title" => "nidera",
+    "url" => "assets/images/project/logo_ferti_color.png"
     ],
 ];
 ?>
