@@ -19,7 +19,7 @@ $array = [
     [
     "logo" => "logo_gotita_color",
     "title" => "gotita",
-    "url" => "assets/images/project/logo_gotita_color.jpg"
+    "url" => "assets/images/project/logo_gotita_color.png"
     ],
     [
     "logo" => "logo_eccole_color",
