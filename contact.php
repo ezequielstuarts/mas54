@@ -134,11 +134,13 @@
                                     <div class="col-12">
                                         <textarea class="contact-textarea" placeholder="Mensaje" id="msg" name="msg" required></textarea>
                                     </div>
+                                    <div class="col-12" style="padding-bottom:30px;">
+                                        <div class="g-recaptcha" data-sitekey="6LcXQ2UUAAAAAAWUqpC7SpVLdJ7WtWY5nd4cDq-Q"></div>  
+                                    </div>
                                     <div class="col-12">
                                         <button id="submit" type="submit" name="submit">ENVIAR MENSAJE</button>
                                     </div>
                                 </div>
-                                <div class="g-recaptcha" data-sitekey="6LcXQ2UUAAAAAAWUqpC7SpVLdJ7WtWY5nd4cDq-Q"></div>
                             </form>
                             
                         </div>
@@ -212,3 +214,4 @@
 </body>
 
 </html>
+
