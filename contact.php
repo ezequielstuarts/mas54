@@ -119,20 +119,27 @@
                             </div> -->
                         </div>
                         <div class="contact-form form-style">
+                        
                             <div class="cf-msg"></div>
-                            <form action="mail.php" method="post">
+                            <div id="success" style=" padding: 50px;background-color: #000000;text-align: center;">
+                            <p>Hemos enviado su mensaje, en breve nos contactaremos.</p>
+                            </div>
+                            <form id="formulario-contacto" action="mail.php" method="post">
                                 <div class="row">
                                     <div class="col-12 col-sm-6">
-                                        <input type="text" placeholder="Nombre" id="fname" name="fname" required>
+                                        <input type="text" placeholder="Nombre" id="fname" name="fname" >
                                     </div>
                                     <div class="col-12  col-sm-6">
-                                        <input type="text" placeholder="Email" id="email" name="email" required>
+                                        <input type="text" placeholder="Email" id="email" name="email" >
                                     </div>
                                     <div class="col-12">
-                                        <input type="text" placeholder="Asunto" id="subject" name="subject" required>
+                                        <input type="text" placeholder="Asunto" id="subject" name="subject" >
                                     </div>
                                     <div class="col-12">
-                                        <textarea class="contact-textarea" placeholder="Mensaje" id="msg" name="msg" required></textarea>
+                                        <textarea class="contact-textarea" placeholder="Mensaje" id="msg" name="msg" ></textarea>
+                                    </div>
+                                    <div class="col-12" id="error" style="padding: 10px;background-color: red;text-align: center;">
+                                        <p>Algo salio mal, no se pudo enviar el mensaje.</p>
                                     </div>
                                     <div class="col-12" style="padding-bottom:30px;">
                                         <div class="g-recaptcha" data-sitekey="6LcXQ2UUAAAAAAWUqpC7SpVLdJ7WtWY5nd4cDq-Q"></div>  
@@ -150,6 +157,10 @@
                     <div class="googlemap-wrap">
                         <div id="googleMap"></div>
                     </div>
+                    
+                    <!-- <div class="google-maps">
+                    <iframe src="https://www.google.com/maps/d/u/1/embed?mid=16SI2CMJoWr95me8ul-qp-x3ovbY6GsSx" width="500" height="700" frameborder="0" style="border:0"></iframe>
+                    </div> -->
                 </div>
             </div>
         </div>
@@ -211,6 +222,7 @@
     </script>
     <!-- main js -->
     <script src="assets/js/scripts.js"></script>
+    <script src="assets/js/enviar.js"></script>
 </body>
 
 </html>
