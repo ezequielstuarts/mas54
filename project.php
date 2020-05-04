@@ -37,7 +37,7 @@
     <!-- modernizr css -->
     <script src="assets/js/vendor/modernizr-2.8.3.min.js"></script>
 
-    <?php @include('includes/googlebar.php') ?>
+    <?php @include('includes/googleAnalytics.php') ?>
     
 </head>
 

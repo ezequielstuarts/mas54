@@ -34,7 +34,7 @@
 
     <script src="https://www.google.com/recaptcha/api.js" async defer></script>
 
-    <?php @include('includes/googlebar.php') ?>
+    <?php @include('includes/googleAnalytics.php') ?>
     
 </head>
 
@@ -127,19 +127,19 @@
                             <form id="formulario-contacto" action="mail.php" method="post">
                                 <div class="row">
                                     <div class="col-12 col-sm-6">
-                                        <input type="text" placeholder="Nombre" id="fname" name="fname" >
+                                        <input type="text" placeholder="Nombre" id="fname" name="fname" required>
                                         <span id="fname_error"></span>
                                     </div>
                                     <div class="col-12  col-sm-6">
-                                        <input type="text" placeholder="Email" id="email" name="email" >
+                                        <input type="text" placeholder="Email" id="email" name="email" required>
                                         <span id="email_error"></span>
                                     </div>
                                     <div class="col-12">
-                                        <input type="text" placeholder="Asunto" id="subject" name="subject" >
+                                        <input type="text" placeholder="Asunto" id="subject" name="subject" required>
                                         <span id="subject_error"></span>
                                     </div>
                                     <div class="col-12">
-                                        <textarea class="contact-textarea" placeholder="Mensaje" id="msg" name="msg" ></textarea>
+                                        <textarea class="contact-textarea" placeholder="Mensaje" id="msg" name="msg" required></textarea>
                                         <span id="msg_error"></span>
                                     </div>
                                     <div class="col-12 hide" id="error" style="padding: 10px;background-color: red;text-align: center;">
@@ -152,7 +152,7 @@
                                         <p>Verifique el captcha.</p>
                                     </div>
                                     <div class="col-12" style="padding-bottom:30px;">
-                                        <div class="g-recaptcha" data-sitekey="6LekAvIUAAAAAFodcLrfqjtw4pkw3VpD1ifhMPVr"></div>  
+                                        <div class="g-recaptcha" data-sitekey="6LcXQ2UUAAAAAAWUqpC7SpVLdJ7WtWY5nd4cDq-Q"></div>  
                                     </div>
                                     <span id="capcha_error"></span>
                                     <div class="col-12">
