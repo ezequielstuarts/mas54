@@ -1,6 +1,8 @@
 $(document).ready(function() {
     $("#success").hide();
     $("#error").hide();
+    $("#campos").hide();
+    $("#captcha").hide();
 
     $("#formulario-contacto").bind("submit", function() {
 
@@ -12,11 +14,16 @@ $(document).ready(function() {
                 if (resp == "ok") {
                     $("#formulario-contacto").hide();
                     $("#success").show();
+                }
+                if (resp == "campos") {
+                    $("#error").hide();
+                    $("#campos").show();
                 } else {
                     $("#error").show();
                 }
             },
             error: function() {
+                $("#campos").hide();
                 $("#error").show();
             },
         });
@@ -24,32 +31,51 @@ $(document).ready(function() {
     });
 });
 
-// $(function() {
-//     $('#errors').hide();
-//     $('.success').hide();
-//     $("#formulario-contacto").submit(function(e) {
-//         var route = $('#formulario-contacto').data('route');
-//         var form_data = $(this);
-//         $('.errors').remove();
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// $(document).ready(function() {
+//     $("#success").hide();
+//     $("#error").hide();
+//     $("#campos").hide();
+//     $("#captcha").hide();
+
+//     $("#formulario-contacto").bind("submit", function() {
 
 //         $.ajax({
-//             type: 'POST',
-//             url: route,
-//             data: form_data.serialize(),
-//             success: function(Response) {
-//                 console.log(Response);
-//                 if ((Response.nombre) || (Response.telefono) || (Response.email) || (Response.pais) || (Response.provincia) || (Response.localidad) || (Response.razon) || (Response.mensaje)) {
-//                     $('#errors').show();
-//                 };
-//                 if (Response.success) {
-//                     $('#errors').hide();
-//                     $('.success').show();
-//                     $('#formulario-contacto').hide();
-
+//             type: $(this).attr("method"),
+//             url: $(this).attr("action"),
+//             data: $(this).serialize(),
+//             success: function(resp) {
+//                 if (resp == "ok") {
+//                     $("#formulario-contacto").hide();
+//                     $("#success").show();
 //                 }
-//             }
+//                 if (resp == "campos") {
+//                     $("#error").hide();
+//                     $("#campos").show();
+//                 } else {
+//                     $("#error").show();
+//                 }
+//             },
+//             error: function() {
+//                 $("#campos").hide();
+//                 $("#error").show();
+//             },
 //         });
-//         e.preventDefault();
+//         return false;
 //     });
-
 // });

@@ -32,7 +32,7 @@
     <!-- modernizr css -->
     <script src="assets/js/vendor/modernizr-2.8.3.min.js"></script>
 
-    <script src='https://www.google.com/recaptcha/api.js'></script>
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
 
     <?php @include('includes/googlebar.php') ?>
     
@@ -128,22 +128,33 @@
                                 <div class="row">
                                     <div class="col-12 col-sm-6">
                                         <input type="text" placeholder="Nombre" id="fname" name="fname" >
+                                        <span id="fname_error"></span>
                                     </div>
                                     <div class="col-12  col-sm-6">
                                         <input type="text" placeholder="Email" id="email" name="email" >
+                                        <span id="email_error"></span>
                                     </div>
                                     <div class="col-12">
                                         <input type="text" placeholder="Asunto" id="subject" name="subject" >
+                                        <span id="subject_error"></span>
                                     </div>
                                     <div class="col-12">
                                         <textarea class="contact-textarea" placeholder="Mensaje" id="msg" name="msg" ></textarea>
+                                        <span id="msg_error"></span>
                                     </div>
                                     <div class="col-12" id="error" style="padding: 10px;background-color: red;text-align: center;">
                                         <p>Algo salio mal, no se pudo enviar el mensaje.</p>
                                     </div>
-                                    <div class="col-12" style="padding-bottom:30px;">
-                                        <div class="g-recaptcha" data-sitekey="6LcXQ2UUAAAAAAWUqpC7SpVLdJ7WtWY5nd4cDq-Q"></div>  
+                                    <div class="col-12" id="campos" style="padding: 10px;background-color: red;text-align: center;">
+                                        <p>Complete todos los campos.</p>
                                     </div>
+                                    <div class="col-12" id="captcha" style="padding: 10px;background-color: red;text-align: center;">
+                                        <p>Verifique el captcha.</p>
+                                    </div>
+                                    <div class="col-12" style="padding-bottom:30px;">
+                                        <div class="g-recaptcha" data-sitekey="6LekAvIUAAAAAFodcLrfqjtw4pkw3VpD1ifhMPVr"></div>  
+                                    </div>
+                                    <span id="capcha_error"></span>
                                     <div class="col-12">
                                         <button id="submit" type="submit" name="submit">ENVIAR MENSAJE</button>
                                     </div>
@@ -185,6 +196,8 @@
             </div>
         </div>
     </footer>
+
+    
     <!-- footer-area end -->
     <!-- jquery latest version -->
     <script src="assets/js/vendor/jquery-2.2.4.min.js"></script>
@@ -222,8 +235,8 @@
     </script>
     <!-- main js -->
     <script src="assets/js/scripts.js"></script>
+
     <script src="assets/js/enviar.js"></script>
 </body>
-
 </html>
 
