@@ -121,7 +121,7 @@
                         <div class="contact-form form-style">
                         
                             <div class="cf-msg"></div>
-                            <div id="success" style=" padding: 50px;background-color: #000000;text-align: center;">
+                            <div class="hide" id="success" style=" padding: 50px;background-color: #000000;text-align: center;">
                             <p>Hemos enviado su mensaje, en breve nos contactaremos.</p>
                             </div>
                             <form id="formulario-contacto" action="mail.php" method="post">
@@ -142,13 +142,13 @@
                                         <textarea class="contact-textarea" placeholder="Mensaje" id="msg" name="msg" ></textarea>
                                         <span id="msg_error"></span>
                                     </div>
-                                    <div class="col-12" id="error" style="padding: 10px;background-color: red;text-align: center;">
+                                    <div class="col-12 hide" id="error" style="padding: 10px;background-color: red;text-align: center;">
                                         <p>Algo salio mal, no se pudo enviar el mensaje.</p>
                                     </div>
-                                    <div class="col-12" id="campos" style="padding: 10px;background-color: red;text-align: center;">
+                                    <div class="col-12 hide" id="campos" style="padding: 10px;background-color: red;text-align: center;">
                                         <p>Complete todos los campos.</p>
                                     </div>
-                                    <div class="col-12" id="recaptcha" style="padding: 10px;background-color: red;text-align: center;">
+                                    <div class="col-12 hide" id="recaptcha" style="padding: 10px;background-color: red;text-align: center;">
                                         <p>Verifique el captcha.</p>
                                     </div>
                                     <div class="col-12" style="padding-bottom:30px;">

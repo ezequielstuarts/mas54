@@ -1,8 +1,8 @@
 $(document).ready(function() {
-    $("#success").hide();
-    $("#error").hide();
-    $("#campos").hide();
-    $("#recaptcha").hide();
+    // $("#success").hide();
+    // $("#error").hide();
+    // $("#campos").hide();
+    // $("#recaptcha").hide();
 
     $("#formulario-contacto").bind("submit", function() {
 
@@ -13,23 +13,23 @@ $(document).ready(function() {
             success: function(resp) {
                 if (resp == "ok") {
                     $("#formulario-contacto").hide();
-                    $("#success").show();
-                    $("#recaptcha").hide();
+                    $("#success").removeClass('hide');
+                    $("#recaptcha").addClass('hide');
                 }
                 if (resp == "campos") {
-                    $("#error").hide();
-                    $("#campos").show();
+                    $("#error").addClass('hide');
+                    $("#campos").removeClass('hide');
                 }
                 if (resp == "resolvercaptcha") {
-                    $("#recaptcha").show();
+                    $("#recaptcha").removeClass('hide');
                 } else {
-                    $("#error").show();
-                    $("#recaptcha").hide();
+                    $("#error").removeClass('hide');
+                    $("#recaptcha").addClass('hide');
                 }
             },
             error: function() {
-                $("#campos").hide();
-                $("#error").show();
+                $("#campos").addClass('hide');
+                $("#error").removeClass('hide');
             },
         });
         return false;
