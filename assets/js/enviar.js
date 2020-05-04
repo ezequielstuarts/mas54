@@ -2,7 +2,7 @@ $(document).ready(function() {
     $("#success").hide();
     $("#error").hide();
     $("#campos").hide();
-    $("#captcha").hide();
+    $("#recaptcha").hide();
 
     $("#formulario-contacto").bind("submit", function() {
 
@@ -18,6 +18,9 @@ $(document).ready(function() {
                 if (resp == "campos") {
                     $("#error").hide();
                     $("#campos").show();
+                }
+                if (resp == "resolvercaptcha") {
+                    $("#recaptcha").show();
                 } else {
                     $("#error").show();
                 }

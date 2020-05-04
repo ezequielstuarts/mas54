@@ -20,7 +20,7 @@ header('Content-type: aplication/json');
 
 	if(empty($_POST['g-recaptcha-response']))
 		{
-			return print(json_encode('ResolverCaptcha'));
+			return print(json_encode('resolvercaptcha'));
 		}
 		else
 		{

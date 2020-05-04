@@ -148,7 +148,7 @@
                                     <div class="col-12" id="campos" style="padding: 10px;background-color: red;text-align: center;">
                                         <p>Complete todos los campos.</p>
                                     </div>
-                                    <div class="col-12" id="captcha" style="padding: 10px;background-color: red;text-align: center;">
+                                    <div class="col-12" id="recaptcha" style="padding: 10px;background-color: red;text-align: center;">
                                         <p>Verifique el captcha.</p>
                                     </div>
                                     <div class="col-12" style="padding-bottom:30px;">
