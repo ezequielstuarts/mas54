@@ -11,12 +11,7 @@ function validar_campo($campo)
 
 header('Content-type: aplication/json');
 
-	if ( 
-		isset($_POST["fname"]) && !empty($_POST["fname"]) &&
-		isset($_POST["email"]) && !empty($_POST["email"]) && 
-		isset($_POST["subject"]) && !empty($_POST["subject"]) &&
-		isset($_POST["msg"]) && !empty($_POST["msg"]) 
-	)
+	
 
 	if(empty($_POST['g-recaptcha-response']))
 		{
@@ -29,6 +24,12 @@ header('Content-type: aplication/json');
 			$response_data = json_decode($response);
 			
 		}
+		if ( 
+			isset($_POST["fname"]) && !empty($_POST["fname"]) &&
+			isset($_POST["email"]) && !empty($_POST["email"]) && 
+			isset($_POST["subject"]) && !empty($_POST["subject"]) &&
+			isset($_POST["msg"]) && !empty($_POST["msg"]) 
+		)
 	
 	{
 		$destinoMail = "elzeke55@gmail.com";

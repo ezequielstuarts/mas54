@@ -14,6 +14,7 @@ $(document).ready(function() {
                 if (resp == "ok") {
                     $("#formulario-contacto").hide();
                     $("#success").show();
+                    $("#recaptcha").hide();
                 }
                 if (resp == "campos") {
                     $("#error").hide();
@@ -23,6 +24,7 @@ $(document).ready(function() {
                     $("#recaptcha").show();
                 } else {
                     $("#error").show();
+                    $("#recaptcha").hide();
                 }
             },
             error: function() {
