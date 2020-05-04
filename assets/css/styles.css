@@ -1712,6 +1712,10 @@ aside.slidebar-area {
     font-weight: 600;
 }
 
+.contact-form button:active {
+    background-color: #868686;
+}
+
 .googlemap-wrap {
     margin-right: -15px;
 }
