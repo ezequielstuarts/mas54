@@ -124,39 +124,33 @@
                             <div class="hide" id="success" style=" padding: 50px;background-color: #000000;text-align: center;">
                             <p>Hemos enviado su mensaje, en breve nos contactaremos.</p>
                             </div>
+                            
                             <form id="formulario-contacto" action="mail.php" method="post">
                                 <div class="row">
                                     <div class="col-12 col-sm-6">
-                                        <input type="text" placeholder="Nombre" id="fname" name="fname" required>
-                                        <span id="fname_error"></span>
+                                        <input type="text" placeholder="Nombre" id="fname" name="fname" >
                                     </div>
                                     <div class="col-12  col-sm-6">
-                                        <input type="text" placeholder="Email" id="email" name="email" required>
-                                        <span id="email_error"></span>
+                                        <input type="text" placeholder="Email" id="email" name="email" >
                                     </div>
                                     <div class="col-12">
-                                        <input type="text" placeholder="Asunto" id="subject" name="subject" required>
-                                        <span id="subject_error"></span>
+                                        <input type="text" placeholder="Asunto" id="subject" name="subject" >
                                     </div>
                                     <div class="col-12">
-                                        <textarea class="contact-textarea" placeholder="Mensaje" id="msg" name="msg" required></textarea>
-                                        <span id="msg_error"></span>
+                                        <textarea class="contact-textarea" placeholder="Mensaje" id="msg" name="msg" ></textarea>
                                     </div>
-                                    <div class="col-12 hide" id="error" style="padding: 10px;background-color: red;text-align: center;">
-                                        <p>Algo salio mal, no se pudo enviar el mensaje.</p>
-                                    </div>
-                                    <div class="col-12 hide" id="campos" style="padding: 10px;background-color: red;text-align: center;">
-                                        <p>Complete todos los campos.</p>
-                                    </div>
-                                    <div class="col-12 hide" id="recaptcha" style="padding: 10px;background-color: red;text-align: center;">
-                                        <p>Verifique el captcha.</p>
+                                    
+                                    <div id="alerta" class="hide col-12" role="alert" style="padding: 10px;background-color: red;text-align: center;">
+                                        <p>
+                                            <b class="respuesta"></b><span class="mensaje-alerta"></span> 
+                                        </p>
                                     </div>
                                     <div class="col-12" style="padding-bottom:30px;">
                                         <div class="g-recaptcha" data-sitekey="6LcXQ2UUAAAAAAWUqpC7SpVLdJ7WtWY5nd4cDq-Q"></div>  
                                     </div>
-                                    <span id="capcha_error"></span>
                                     <div class="col-12">
                                         <button id="submit" type="submit" name="submit">ENVIAR MENSAJE</button>
+                                        <button id="enviando" class="hide" name="submit">ENVIANDO ...</button>
                                     </div>
                                 </div>
                             </form>

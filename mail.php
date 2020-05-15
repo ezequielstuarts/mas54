@@ -9,7 +9,14 @@ function validar_campo($campo)
 }
 
 header('Content-type: aplication/json');
-	if(empty($_POST['g-recaptcha-response']))
+		if ( 
+			isset($_POST["fname"]) && !empty($_POST["fname"]) &&
+			isset($_POST["email"]) && !empty($_POST["email"]) && 
+			isset($_POST["subject"]) && !empty($_POST["subject"]) &&
+			isset($_POST["msg"]) && !empty($_POST["msg"]))
+	
+	{
+		if(empty($_POST['g-recaptcha-response']))
 		{
 			return print(json_encode('resolvercaptcha'));
 		}
@@ -20,14 +27,7 @@ header('Content-type: aplication/json');
 			$response_data = json_decode($response);
 			
 		}
-		if ( 
-			isset($_POST["fname"]) && !empty($_POST["fname"]) &&
-			isset($_POST["email"]) && !empty($_POST["email"]) && 
-			isset($_POST["subject"]) && !empty($_POST["subject"]) &&
-			isset($_POST["msg"]) && !empty($_POST["msg"]) 
-		)
-	
-	{
+
 		// $destinoMail = "elzeke55@gmail.com";
 		$destinoMail = "s.gutierrez@mas54.com";
 
@@ -37,16 +37,21 @@ header('Content-type: aplication/json');
 		$msg = validar_campo($_POST["msg"]);
 		
 		$asunto = "Contacto desde la Web de +54";
-		$contenido = "<b>Nombre: </b>".$_POST['fname']."<br><b>Email: </b>".$_POST['email']."<br><b>Asunto: </b>".$_POST['subject']."<br><b>Mensaje: </b>".$_POST['msg'];
+		$contenido = 
+		"<div style='font-size: 16px;'>
+		<p><b>Nombre: </b>".$_POST['fname']."</p>
+		<p><b>E-mail: </b>".$_POST['email']."</p>
+		<p><b>Asunto: </b>".$_POST['subject']."</p>
+		<p><b>Mensaje: </b>".$_POST['msg']."</p></div>";
 
 		$cabeceras  = 'MIME-Version: 1.0' . "\r\n";
 		$cabeceras .= 'Content-type: text/html; charset=iso-8859-1' . "\r\n";
 		$cabeceras .= 'From: contacto@mas54.com' . "\r\n";
 
 		mail($destinoMail,$asunto,$contenido,$cabeceras);
-		return print(json_encode('ok'));
+		return print(json_encode('PHPEnviado'));
 	} 
-	return print(json_encode('campos'));
+	return print(json_encode('PHPnoEnviado'));
 	
 ?>
 

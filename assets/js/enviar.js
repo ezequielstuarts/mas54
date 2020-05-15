@@ -1,35 +1,38 @@
 $(document).ready(function() {
-    // $("#success").hide();
-    // $("#error").hide();
-    // $("#campos").hide();
-    // $("#recaptcha").hide();
 
     $("#formulario-contacto").bind("submit", function() {
-
+        $("#enviando").removeClass("hide");
+        $("#submit").addClass("hide");
         $.ajax({
             type: $(this).attr("method"),
             url: $(this).attr("action"),
             data: $(this).serialize(),
             success: function(resp) {
-                if (resp == "ok") {
-                    $("#formulario-contacto").hide();
-                    $("#success").removeClass('hide');
-                    $("#recaptcha").addClass('hide');
-                }
-                if (resp == "campos") {
-                    $("#error").addClass('hide');
-                    $("#campos").removeClass('hide');
+                if (resp == "PHPnoEnviado") {
+                    $("#alerta").removeClass("hide").removeClass("alert-success");
+                    $(".respuesta").html("Complete todos los campos ");
+                    $(".mensaje-alerta").html("para enviar el formulario.");
+                    $("#enviando").addClass("hide");
+                    $("#submit").removeClass("hide");
                 }
                 if (resp == "resolvercaptcha") {
-                    $("#recaptcha").removeClass('hide');
-                } else {
-                    $("#error").removeClass('hide');
-                    $("#recaptcha").addClass('hide');
+                    $("#alerta").removeClass("hide").removeClass("alert-success");
+                    $(".respuesta").html("Resuelva el recaptcha ");
+                    $(".mensaje-alerta").html("para enviar el formulario.");
+                    $("#enviando").addClass("hide");
+                    $("#submit").removeClass("hide");
+                }
+                if (resp == "PHPEnviado") {
+                    $("#formulario-contacto").addClass("hide");
+                    $("#success").removeClass("hide");
                 }
             },
             error: function() {
-                $("#campos").addClass('hide');
-                $("#error").removeClass('hide');
+                $("#alerta").removeClass("hide");
+                $(".respuesta").html("Error! ");
+                $(".mensaje-alerta").html("de conexion. Intentelo de nuevo!.");
+                $("#enviando").addClass("hide");
+                $("#submit").removeClass("hide");
             },
         });
         return false;
