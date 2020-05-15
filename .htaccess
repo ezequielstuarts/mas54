@@ -1,0 +1,17 @@
+<IfModule mod_rewrite.c>
+    <IfModule mod_negotiation.c>
+        Options -MultiViews
+    </IfModule>
+
+    RewriteEngine On
+
+    RewriteRule ^&$ index.php [L]
+
+    RewriteRule ^home$ index.php [L]
+    RewriteRule ^agencia$ agencia.php [L]
+    RewriteRule ^service$ service.php [L]
+    RewriteRule ^project$ project.php [L]
+    RewriteRule ^contact$ contact.php [L]
+    
+    
+</IfModule>

@@ -2,11 +2,11 @@
     <div class="row">
         <div class="col-12">
             <ul class="mainmenu">
-                <li><a href="index.php">Home</a></li>
-                <li><a href="agencia.php">La Agencia</a></li>
-                <li><a href="service.php">Servicios</a></li>
-                <li><a href="project.php">Clientes</a></li>
-                <li><a href="contact.php">Contacto</a></li>
+                <li><a href="home">Home</a></li>
+                <li><a href="agencia">La Agencia</a></li>
+                <li><a href="service">Servicios</a></li>
+                <li><a href="project">Clientes</a></li>
+                <li><a href="contact">Contacto</a></li>
                 
             </ul>
         </div>

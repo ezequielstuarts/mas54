@@ -34,7 +34,7 @@
 
     <script src="https://www.google.com/recaptcha/api.js" async defer></script>
 
-    <?php @include('includes/googleAnalytics.php') ?>
+    <?php include('includes/googleAnalytics.php') ?>
     
 </head>
 
@@ -42,7 +42,7 @@
 
     <!-- .menu-area start -->
     <div class="menu-area">
-        <?php @include('includes/nav-bar.php') ?>
+        <?php include('includes/nav-bar.php') ?>
     </div>
     <!-- .menu-area end -->
     <!-- header-area start -->
@@ -60,7 +60,7 @@
                   </div>
                 </div>
                 <div class="col-lg-3 text-right col-sm-5 order-0 col-8">
-                    <?php @include('includes/redes.php') ?>
+                    <?php include('includes/redes.php') ?>
                 </div>
                 <div class="col-lg-1 col-sm-2 order-0 col-4">
                     <ul class="menu">

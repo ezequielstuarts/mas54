@@ -33,7 +33,7 @@
     <!-- modernizr css -->
     <script src="assets/js/vendor/modernizr-2.8.3.min.js"></script>
 
-    <?php @include('includes/googleAnalytics.php') ?>>
+    <?php include('includes/googleAnalytics.php') ?>>
 
     
 </head>
@@ -48,7 +48,7 @@
    
         <!-- .menu-area start -->
         <div class="menu-area">
-            <?php @include('includes/nav-bar.php') ?>
+            <?php include('includes/nav-bar.php') ?>
         </div>
         <!-- .menu-area end -->
     <!-- header-area start -->
@@ -66,7 +66,7 @@
                   </div>
                 </div>
                 <div class="col-lg-3 text-right col-sm-5 order-0 col-8">
-                    <?php @include('includes/redes.php') ?>
+                    <?php include('includes/redes.php') ?>
                 </div>
                 <div class="col-lg-1 col-sm-2 order-0 col-4">
                     <ul class="menu">
@@ -163,21 +163,7 @@
     </div>
     <!-- about-area end -->
     <!-- footer-area start -->
-    <footer class="footer-area">
-        <div class="container-fluid">
-            <div class="row">
-                <div class="col-md-6 col-sm-7 col-12">
-                    <p>Copyright © 2018 | Más54. Agencia Digital  | Todos los derechos reservados.</p>
-                </div>
-                <div class="col-md-6 col-sm-5 col-12">
-                    <ul class="d-flex">
-                        <li><a href="contact.php">Contacto</a></li>
-                        <li class="oculto"><a class="video-popup" href="#"><span class="flaticon-play-button"></span></a></li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </footer>
+    <?php include('includes/footer.php') ?>
     <!-- footer-area end -->
     <!-- jquery latest version -->
     <script src="assets/js/vendor/jquery-2.2.4.min.js"></script>
