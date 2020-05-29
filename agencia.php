@@ -54,7 +54,7 @@
             <div class="row">
                 <div class="col-lg-4 col-sm-5 order-0 col-12">
                     <div class="header-left">
-                      <p><a href="index.php"><img class="light-logo" src="assets/images/logo.png" alt=""></a></p>
+                      <p><a href="home"><img class="light-logo" src="assets/images/logo.png" alt=""></a></p>
                     </div>
                 </div>
                 <div class="col-lg-4 text-center col-12 order-4 order-lg-0">
@@ -131,7 +131,7 @@
                         <div class="about-info">
                             <h2>Más de 12 años desarrollando websites,landings, pages, intranets, e-commerce, gaming, campañas digitales, social media, e-mail marketing, entre otras.</h2>
                             
-                            <a href="service.html">Ver nuestros servicios <i class="fa fa-angle-right"></i></a>
+                            <a href="service">Ver nuestros servicios <i class="fa fa-angle-right"></i></a>
                         </div>
                     </div>
                 </div>

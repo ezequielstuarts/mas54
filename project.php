@@ -60,7 +60,7 @@ include("data/marcas.php")
             <div class="row">
                 <div class="col-lg-4 col-sm-5 order-0 col-12">
                     <div class="header-left">
-                      <p><a href="index.php"><img class="light-logo" src="assets/images/logo.png" alt=""></a></p>
+                      <p><a href="home"><img class="light-logo" src="assets/images/logo.png" alt=""></a></p>
                     </div>
                 </div>
                 <div class="col-lg-4 text-center col-12 order-4 order-lg-0">
